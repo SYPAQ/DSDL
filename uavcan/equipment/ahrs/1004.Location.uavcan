@@ -1,0 +1,17 @@
+#
+# AHRS location.
+#
+# Uses same scaling as ArduPilot Location class.
+#
+
+#-- CAN Packet 1
+uint8 type
+
+# 3 bytes of padding to fill out 8 byte CAN packet
+void24
+
+int32 altitude_amsl_cm
+
+#-- CAN Packet 2
+int32 latitude_deg_1e7
+int32 longitude_deg_1e7
