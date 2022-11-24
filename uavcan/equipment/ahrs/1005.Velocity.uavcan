@@ -1,0 +1,13 @@
+#
+# AHRS velocity.
+#
+
+#-- CAN Packet 1
+uint8 type
+
+# 1 byte of padding to fill out 8 byte CAN packet
+void8
+
+float16 north  # metres per second
+float16 east   # metres per second
+float16 up     # metres per second
